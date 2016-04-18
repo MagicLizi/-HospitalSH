@@ -28,8 +28,8 @@ namespace Hostpital
             IPEndPoint hostEP = new IPEndPoint(myIP, port);
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Connect(hostEP);
-            Console.WriteLine("连接传感器成功...");
-            Console.WriteLine();
+            //Console.WriteLine("连接传感器成功...");
+            //Console.WriteLine();
 
         }
 
@@ -43,8 +43,8 @@ namespace Hostpital
 
         public void BeginTick()
         {
-            Console.WriteLine("开始监控轮询传感器数据...");
-            Console.WriteLine();
+            //Console.WriteLine("开始监控轮询传感器数据...");
+            //Console.WriteLine();
             tmr = new Timer();
             tmr.Interval = 800;
             tmr.Elapsed += new ElapsedEventHandler(tmr_Elapsed);
@@ -146,15 +146,15 @@ namespace Hostpital
                              "DI3:" + DI3 + "\r\n" +
                              "DI4:" + DI4 + "\r\n" +
                              "DI5:" + DI5 + "\r\n";
-            mainForm.RefreshTextShow(content, sensorInfo);
+            mainForm.MainRefreshTextShow(content, sensorInfo);
 
-            Console.WriteLine("DI1:" + DI1);
-            Console.WriteLine("DI2:" + DI2);
-            Console.WriteLine("DI3:" + DI3);
-            Console.WriteLine("DI4:" + DI4);
-            Console.WriteLine("DI5:" + DI5);
-            Console.WriteLine("---------------------------------------");
-            Console.WriteLine();
+            //Console.WriteLine("DI1:" + DI1);
+            //Console.WriteLine("DI2:" + DI2);
+            //Console.WriteLine("DI3:" + DI3);
+            //Console.WriteLine("DI4:" + DI4);
+            //Console.WriteLine("DI5:" + DI5);
+            //Console.WriteLine("---------------------------------------");
+            //Console.WriteLine();
         }
     }
 }

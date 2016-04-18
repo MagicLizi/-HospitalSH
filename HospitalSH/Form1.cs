@@ -47,6 +47,13 @@ namespace HospitalSH
             }
         }
 
+        delegate void RefreshTextShowDelegate(string showContent, string sensorInfos);
+
+        public void MainRefreshTextShow(string showContent, string sensorInfos)
+        {
+            this.Invoke(new RefreshTextShowDelegate(RefreshTextShow), showContent, sensorInfos);
+        }
+
         public void RefreshTextShow(string showContent,string sensorInfos)
         {
             richTextBox1.Text = showContent +"\r\n";
