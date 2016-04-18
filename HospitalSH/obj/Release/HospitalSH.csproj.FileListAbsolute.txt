@@ -1,0 +1,8 @@
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\bin\Release\HospitalSH.exe.config
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\bin\Release\HospitalSH.exe
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\bin\Release\HospitalSH.pdb
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.Form1.resources
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.Properties.Resources.resources
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.csproj.GenerateResource.Cache
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.exe
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.pdb
