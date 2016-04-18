@@ -1,0 +1,9 @@
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\bin\Debug\HospitalSH.exe.config
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\bin\Debug\HospitalSH.exe
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\bin\Debug\HospitalSH.pdb
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Debug\HospitalSH.csprojResolveAssemblyReference.cache
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Debug\HospitalSH.Properties.Resources.resources
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Debug\HospitalSH.csproj.GenerateResource.Cache
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Debug\HospitalSH.exe
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Debug\HospitalSH.pdb
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Debug\HospitalSH.Form1.resources
