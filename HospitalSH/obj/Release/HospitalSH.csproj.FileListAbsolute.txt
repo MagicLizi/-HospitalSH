@@ -6,3 +6,4 @@ C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.Properties.Re
 C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.csproj.GenerateResource.Cache
 C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.exe
 C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.pdb
+C:\Users\Lizi\Desktop\HospitalSH\HospitalSH\obj\Release\HospitalSH.csprojResolveAssemblyReference.cache

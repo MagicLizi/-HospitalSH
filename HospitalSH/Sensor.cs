@@ -114,23 +114,23 @@ namespace Hostpital
             string DI3 = "断开";
             string DI4 = "断开";
             string DI5 = "断开";
-            if (sensorInfo[0].ToString() == "1")
+            if (sensorInfo[7].ToString() == "1")
             {
                 DI1 = "闭合";
             }
-            if (sensorInfo[1].ToString() == "1")
+            if (sensorInfo[6].ToString() == "1")
             {
                 DI2 = "闭合";
             }
-            if (sensorInfo[2].ToString() == "1")
+            if (sensorInfo[5].ToString() == "1")
             {
                 DI3 = "闭合";
             }
-            if (sensorInfo[3].ToString() == "1")
+            if (sensorInfo[5].ToString() == "1")
             {
                 DI4 = "闭合";
             }
-            if (sensorInfo[4].ToString() == "1")
+            if (sensorInfo[3].ToString() == "1")
             {
                 DI5 = "闭合";
             }

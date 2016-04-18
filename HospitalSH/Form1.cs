@@ -63,27 +63,27 @@ namespace HospitalSH
             label8.Text = "有人";
             label9.Text = "有人";
             label10.Text = "有人";
-            if (sensorInfos[0].ToString() == "0")
+            if (sensorInfos[7].ToString() == "0")
             {
                 p1 = @"softgreen.png";
                 label6.Text = "无人";
             }
-            if (sensorInfos[1].ToString() == "0")
+            if (sensorInfos[6].ToString() == "0")
             {
                 p2 = @"softgreen.png";
                 label7.Text = "无人";
             }
-            if (sensorInfos[2].ToString() == "0")
+            if (sensorInfos[5].ToString() == "0")
             {
                 p3 = @"softgreen.png";
                 label8.Text = "无人";
             }
-            if (sensorInfos[3].ToString() == "0")
+            if (sensorInfos[4].ToString() == "0")
             {
                 p4 = @"softgreen.png";
                 label9.Text = "无人";
             }
-            if (sensorInfos[4].ToString() == "0")
+            if (sensorInfos[3].ToString() == "0")
             {
                 p5 = @"softgreen.png";
                 label10.Text = "无人";
