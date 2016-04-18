@@ -53,9 +53,16 @@ namespace Hostpital
 
         void tmr_Elapsed(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("编号{0}：获取传感器信息...", id);
-            id++;
-            GetSensorInfo();
+            try
+            {
+                Console.WriteLine("编号{0}：获取传感器信息...", id);
+                id++;
+                GetSensorInfo();
+            }
+            catch(Exception error)
+            {
+
+            }
         }
 
         public void GetSensorInfo()

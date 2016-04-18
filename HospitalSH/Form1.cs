@@ -22,21 +22,28 @@ namespace HospitalSH
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(button1.Text == "打开数据采集")
+            try
             {
-                //直接读取出字符串
-                string host = System.IO.File.ReadAllText(@"sensorConfig.txt");
+                if (button1.Text == "打开数据采集")
+                {
+                    //直接读取出字符串
+                    string host = System.IO.File.ReadAllText(@"sensorConfig.txt");
 
-                s = new Sensor();
-                s.mainForm = this;
-                s.ConnectToSensor(host, 502);
-                s.BeginTick();
-                button1.Text = "关闭数据采集";
+                    s = new Sensor();
+                    s.mainForm = this;
+                    s.ConnectToSensor(host, 502);
+                    s.BeginTick();
+                    button1.Text = "关闭数据采集";
+                }
+                else
+                {
+                    s.CloseSensor();
+                    button1.Text = "打开数据采集";
+                }
             }
-            else
+            catch(Exception error)
             {
-                s.CloseSensor();
-                button1.Text = "打开数据采集";
+                MessageBox.Show(error.ToString());
             }
         }
 
