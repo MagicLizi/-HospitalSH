@@ -49,7 +49,7 @@ namespace HospitalSH
 
         public void RefreshTextShow(string showContent,string sensorInfos)
         {
-            richTextBox1.Text = richTextBox1.Text + showContent +"\r\n";
+            richTextBox1.Text = showContent +"\r\n";
             richTextBox1.Select(richTextBox1.Text.Length, 1);
             richTextBox1.ScrollToCaret();
 

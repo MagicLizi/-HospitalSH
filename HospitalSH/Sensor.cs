@@ -46,7 +46,7 @@ namespace Hostpital
             Console.WriteLine("开始监控轮询传感器数据...");
             Console.WriteLine();
             tmr = new Timer();
-            tmr.Interval = 2000;
+            tmr.Interval = 800;
             tmr.Elapsed += new ElapsedEventHandler(tmr_Elapsed);
             tmr.Start();
         }
@@ -57,6 +57,10 @@ namespace Hostpital
             {
                 Console.WriteLine("编号{0}：获取传感器信息...", id);
                 id++;
+                if(id>=100000000)
+                {
+                    id = 0;
+                }
                 GetSensorInfo();
             }
             catch(Exception error)
