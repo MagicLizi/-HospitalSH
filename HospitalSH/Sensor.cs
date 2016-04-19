@@ -41,6 +41,19 @@ namespace Hostpital
 
         }
 
+        public void TestTick()
+        {
+            tmr = new Timer();
+            tmr.Interval = 800;
+            tmr.Elapsed += new ElapsedEventHandler(testtmr_Elapsed);
+            tmr.Start();
+        }
+
+        public void StopTest()
+        {
+            tmr.Stop();
+        }
+
         public void BeginTick()
         {
             //Console.WriteLine("开始监控轮询传感器数据...");
@@ -49,6 +62,24 @@ namespace Hostpital
             tmr.Interval = 800;
             tmr.Elapsed += new ElapsedEventHandler(tmr_Elapsed);
             tmr.Start();
+        }
+
+        void testtmr_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            try
+            {
+                Console.WriteLine("编号{0}：获取传感器信息...", id);
+                id++;
+                if (id >= 100000000)
+                {
+                    id = 0;
+                }
+                ShowSensorInfo("00001101");
+            }
+            catch (Exception error)
+            {
+
+            }
         }
 
         void tmr_Elapsed(object sender, ElapsedEventArgs e)
@@ -130,7 +161,7 @@ namespace Hostpital
             {
                 DI3 = "闭合";
             }
-            if (sensorInfo[5].ToString() == "1")
+            if (sensorInfo[4].ToString() == "1")
             {
                 DI4 = "闭合";
             }

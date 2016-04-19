@@ -13,6 +13,8 @@ namespace HospitalSH
 {
     public partial class Form1 : Form
     {
+        bool test = true;
+
         Sensor s;
         public Form1()
         {
@@ -31,13 +33,27 @@ namespace HospitalSH
 
                     s = new Sensor();
                     s.mainForm = this;
-                    s.ConnectToSensor(host, 502);
-                    s.BeginTick();
+                    if(test)
+                    {
+                        s.TestTick();
+                    }
+                    else
+                    {
+                        s.ConnectToSensor(host, 502);
+                        s.BeginTick();
+                    }
                     button1.Text = "关闭数据采集";
                 }
                 else
                 {
-                    s.CloseSensor();
+                    if(test)
+                    {
+                        s.StopTest();
+                    }
+                    else
+                    {
+                        s.CloseSensor();
+                    }
                     button1.Text = "打开数据采集";
                 }
             }
@@ -65,35 +81,35 @@ namespace HospitalSH
             string p3 = @"softred.png";
             string p4 = @"softred.png";
             string p5 = @"softred.png";
-            label6.Text = "有人";
-            label7.Text = "有人";
-            label8.Text = "有人";
-            label9.Text = "有人";
-            label10.Text = "有人";
+            //label6.Text = "有人";
+            //label7.Text = "有人";
+            //label8.Text = "有人";
+            //label9.Text = "有人";
+            //label10.Text = "有人";
             if (sensorInfos[7].ToString() == "0")
             {
                 p1 = @"softgreen.png";
-                label6.Text = "无人";
+                //label6.Text = "无人";
             }
             if (sensorInfos[6].ToString() == "0")
             {
                 p2 = @"softgreen.png";
-                label7.Text = "无人";
+               // label7.Text = "无人";
             }
             if (sensorInfos[5].ToString() == "0")
             {
                 p3 = @"softgreen.png";
-                label8.Text = "无人";
+               // label8.Text = "无人";
             }
             if (sensorInfos[4].ToString() == "0")
             {
                 p4 = @"softgreen.png";
-                label9.Text = "无人";
+                //label9.Text = "无人";
             }
             if (sensorInfos[3].ToString() == "0")
             {
                 p5 = @"softgreen.png";
-                label10.Text = "无人";
+               // label10.Text = "无人";
             }
 
 
