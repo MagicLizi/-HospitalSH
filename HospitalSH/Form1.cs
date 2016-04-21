@@ -13,7 +13,7 @@ namespace HospitalSH
 {
     public partial class Form1 : Form
     {
-        bool test = true;
+        bool test = false;
 
         Sensor s;
         public Form1()
@@ -76,11 +76,11 @@ namespace HospitalSH
             richTextBox1.Select(richTextBox1.Text.Length, 1);
             richTextBox1.ScrollToCaret();
 
-            string p1 = @"softred.png";
-            string p2 = @"softred.png";
-            string p3 = @"softred.png";
-            string p4 = @"softred.png";
-            string p5 = @"softred.png";
+            string p1 = @"red.png";
+            string p2 = @"red.png";
+            string p3 = @"red.png";
+            string p4 = @"red.png";
+            string p5 = @"red.png";
             //label6.Text = "有人";
             //label7.Text = "有人";
             //label8.Text = "有人";
@@ -88,36 +88,36 @@ namespace HospitalSH
             //label10.Text = "有人";
             if (sensorInfos[7].ToString() == "0")
             {
-                p1 = @"softgreen.png";
+                p1 = @"green.png";
                 //label6.Text = "无人";
             }
             if (sensorInfos[6].ToString() == "0")
             {
-                p2 = @"softgreen.png";
+                p2 = @"green.png";
                // label7.Text = "无人";
             }
             if (sensorInfos[5].ToString() == "0")
             {
-                p3 = @"softgreen.png";
+                p3 = @"green.png";
                // label8.Text = "无人";
             }
             if (sensorInfos[4].ToString() == "0")
             {
-                p4 = @"softgreen.png";
+                p4 = @"green.png";
                 //label9.Text = "无人";
             }
             if (sensorInfos[3].ToString() == "0")
             {
-                p5 = @"softgreen.png";
+                p5 = @"green.png";
                // label10.Text = "无人";
             }
 
 
-            pictureBox1.Image = Image.FromFile(p1);
-            pictureBox2.Image = Image.FromFile(p2);
-            pictureBox3.Image = Image.FromFile(p3);
-            pictureBox4.Image = Image.FromFile(p4);
-            pictureBox5.Image = Image.FromFile(p5);
+            label2.Image = Image.FromFile(p1);
+            label3.Image = Image.FromFile(p2);
+            label4.Image = Image.FromFile(p3);
+            label5.Image = Image.FromFile(p4);
+            label6.Image = Image.FromFile(p5);
 
         }
 
